@@ -27,9 +27,9 @@ Users should be able to:
 - See the social media share links when they click the share icon
 
 ### Screenshot
-
-![](./screenshot.jpg)
-
+<img width="1314" height="581" alt="Image" src="https://github.com/user-attachments/assets/78082fb2-f49c-4bba-b965-ba41e088f41a" />
+<img width="500" height="654" alt="Image" src="https://github.com/user-attachments/assets/97731485-f4cd-4e76-bf30-4f61eae78997" />
+<img width="500" height="654" alt="Image" src="https://github.com/user-attachments/assets/3fea6f1e-2efb-44cd-8f41-89bd542871d4" />
 
 ### Links
 
@@ -61,6 +61,10 @@ Users should be able to:
 
 
 ## Author
+
+- Website - [Farzaneh Kazemi](https://verdant-bienenstitch-220a6d.netlify.app/)
+- Frontend Mentor - [@Farzane2630](https://www.frontendmentor.io/profile/Farzane2630)
+- StackOverflow - [@farzane-kazemi](https://stackoverflow.com/users/19888516/farzane-kazemi)
 
 
 ## Acknowledgments

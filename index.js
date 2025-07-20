@@ -1,8 +1,8 @@
-let shareBtns = document.querySelectorAll(".icon-wrapper");
-let socialLinks = document.querySelector(".share-section");
-let authorSection = document.querySelector(".author-section ");
-let tooltip = document.querySelector(".tooltip");
-let tooltipTale = document.querySelector(".tooltip-tale");
+const shareBtns = document.querySelectorAll(".icon-wrapper");
+const socialLinks = document.querySelector(".share-section");
+const authorSection = document.querySelector(".author-section ");
+const tooltip = document.querySelector(".tooltip");
+const tooltipTale = document.querySelector(".tooltip-tale");
 
 for (let btn of shareBtns) {
   btn.addEventListener("click", () => {

@@ -1,5 +1,126 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 body {
-  background: #000 !important;
-  color: #fff; }
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-inline: 1.5rem; }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 4rem 1fr 2rem;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  align-items: center; }
+
+.icon-wrapper {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.share {
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.4rem;
+  color: #9eafc2; }
+
+.social-icons {
+  display: flex;
+  column-gap: 1rem; }
+
+.wrapper {
+  display: grid;
+  border-radius: 1rem;
+  background-color: #fff;
+  max-width: 40rem; }
+
+.article-img {
+  width: 100%;
+  height: 15rem;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: cover; }
+
+.article {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  font-weight: 500; }
+  .article .header {
+    font-size: 1.5rem;
+    color: #48556a; }
+  .article .content {
+    color: #9eafc2; }
+
+.tooltip {
+  position: absolute;
+  background-color: #6d7f97;
+  right: -2rem;
+  bottom: 5rem;
+  display: flex;
+  column-gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: linear .2ms; }
+  .tooltip .social-icons {
+    column-gap: 0.5rem; }
+
+.tooltip-tale {
+  height: 1rem;
+  width: 1rem;
+  background-color: #6d7f97;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 2.5rem;
+  bottom: 4.5rem;
+  transition: linear .2ms; }
+
+.author-section {
+  position: relative; }
+  .author-section .avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%; }
+  .author-section .info .name {
+    color: #48556a;
+    font-weight: 700;
+    font-size: 1.2rem; }
+  .author-section .info .date {
+    color: #9eafc2;
+    font-size: 1rem; }
+
+.share-section {
+  background-color: #6d7f97;
+  gap: 1.5rem;
+  border-radius: 0 0 1rem 1rem; }
+  .share-section .icon-wrapper {
+    background-color: #48556a; }
+
+.author-section .tooltip.hide,
+.author-section .tooltip-tale.hide,
+.author-section.hide,
+.share-section.hide {
+  display: none; }
+
+@media (min-width: 40rem) {
+  .wrapper {
+    grid-template-columns: 1fr 1.5fr; }
+
+  .article-img {
+    height: 100%;
+    border-radius: 1rem 0 0 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

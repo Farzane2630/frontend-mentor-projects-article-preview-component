@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -22,6 +26,7 @@
           class="article-img"
         />
       </section>
+
       <section class="content-section">
         <article class="article">
           <strong class="header"
@@ -34,25 +39,83 @@
             you make any room feel complete.
           </p>
         </article>
-        <div class="profile">
-          <img
-            src="./images/avatar-michelle.jpg"
-            alt="Author`s avatar"
-            class="avatar"
-          />
-          <div class="info">
-            <p class="name">Michelle Appleton</p>
-            <p class="date">19 Jul 2025</p>
+        <section class="author-section">
+          <!-- this element toggles display when share icon is clicked -->
+          <div class="tooltip hide">
+            <p class="share">SHARE</p>
+            <div class="social-icons">
+              <img
+                src="./images/icon-facebook.svg"
+                alt="facebook-icon"
+                class="social-icon"
+              />
+              <img
+                src="./images/icon-twitter.svg"
+                alt="twitter-icon"
+                class="social-icon"
+              />
+              <img
+                src="./images/icon-pinterest.svg"
+                alt="pinterest-icon"
+                class="social-icon"
+              />
+            </div>
           </div>
-          <span class="icon-wrapper">
+          <div class="tooltip-tale hide"></div>
+          <!--  -->
+          <div class="grid-layout author">
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Author`s avatar"
+              class="avatar"
+            />
+            <div class="info">
+              <p class="name">Michelle Appleton</p>
+              <p class="date">19 Jul 2025</p>
+            </div>
+            <div class="icon-wrapper">
+              <img
+                src="./images/icon-share.svg"
+                alt="share-icon"
+                class="share-icon"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- this element toggles display when share icon is clicked -->
+        <section class="grid-layout share-section hide">
+          <p class="share">SHARE</p>
+          <div class="social-icons">
+            <img
+              src="./images/icon-facebook.svg"
+              alt="facebook-icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter-icon"
+              class="social-icon"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="pinterest-icon"
+              class="social-icon"
+            />
+          </div>
+
+          <div class="icon-wrapper">
             <img
               src="./images/icon-share.svg"
               alt="share-icon"
               class="share-icon"
             />
-          </span>
-        </div>
+          </div>
+        </section>
+        <!-- ------------------------ -->
       </section>
     </main>
+
+    <script src="./index.js"></script>
   </body>
 </html>

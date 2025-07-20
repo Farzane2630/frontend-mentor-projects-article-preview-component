@@ -50,6 +50,78 @@ Users should be able to:
 
 ### What I learned
 
+### 🔷 `transform: translateX(-50%);`
+
+This is a CSS **transform function** that shifts an element horizontally by **50% of its own width, to the left**.
+
+Why?
+It’s very commonly used when you want to *center something horizontally* relative to its containing element.
+
+#### Example:
+
+```
+.tooltip {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+```
+
+Here:
+
+* `left: 50%` moves the element’s **left edge** to 50% of the parent’s width.
+* `transform: translateX(-50%)` moves the element left by **half its own width**, so it’s centered properly.
+
+Without the `translateX(-50%)`, the tooltip would be shifted too far to the right.
+
+So:
+📐 `left:50%` + `translateX(-50%)` = center horizontally.
+
+---
+
+### 🔷 `aria-expanded`
+
+This is an **ARIA (Accessible Rich Internet Applications)** attribute used for accessibility.
+
+It indicates whether a toggle-able UI element (like a dropdown menu, accordion panel, or tooltip) is currently **expanded (`true`) or collapsed (`false`)**.
+
+#### Example:
+
+```
+<button aria-expanded="false" aria-controls="tooltip">
+  Share
+</button>
+
+<div id="tooltip" hidden>
+  …
+</div>
+```
+
+When the user clicks the button, your JavaScript should toggle the value:
+
+```js
+const btn = document.querySelector('button');
+btn.addEventListener('click', () => {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+});
+```
+
+Screen readers will announce *"expanded"* or *"collapsed"* to visually impaired users.
+
+So:
+👩‍🦯 `aria-expanded` helps **communicate the state of interactive controls** for accessibility.
+
+---
+
+### 🔷 Summary:
+
+✅ `translateX(-50%)` → shift element horizontally by -50% of its own width.
+✅ `aria-expanded` → tells assistive tech if the element is expanded or collapsed.
+
+If you want, I can also show you how to pair `aria-controls` and `hidden` to fully make your tooltip accessible — just ask! 🌱
+
+
 ### Continued development
 
 ### Useful resources

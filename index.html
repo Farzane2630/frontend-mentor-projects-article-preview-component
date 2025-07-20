@@ -29,9 +29,9 @@
 
       <section class="content-section">
         <article class="article">
-          <strong class="header"
+          <h1 class="header"
             >Shift the overall look and feel by adding these wonderful touches
-            to furniture in your home</strong
+            to furniture in your home</h1
           >
           <p class="content">
             Ever been in a room and felt like something was missing? Perhaps it
@@ -41,7 +41,7 @@
         </article>
         <section class="author-section">
           <!-- this element toggles display when share icon is clicked -->
-          <div class="tooltip hide">
+          <div class="tooltip visually-hidden">
             <p class="share">SHARE</p>
             <div class="social-icons">
               <img
@@ -72,18 +72,18 @@
               <p class="name">Michelle Appleton</p>
               <p class="date">19 Jul 2025</p>
             </div>
-            <div class="icon-wrapper">
+            <button aria-controls="tooltip" aria-expanded="false" aria-label="Share this article" class="icon-wrapper">
               <img
                 src="./images/icon-share.svg"
-                alt="share-icon"
+                alt="share-icon-button"
                 class="share-icon"
               />
-            </div>
+            </button>
           </div>
         </section>
 
         <!-- this element toggles display when share icon is clicked -->
-        <section class="grid-layout share-section hide">
+        <section class="grid-layout share-section visually-hidden">
           <p class="share">SHARE</p>
           <div class="social-icons">
             <img
@@ -103,13 +103,13 @@
             />
           </div>
 
-          <div class="icon-wrapper">
+          <button aria-controls="tooltip" aria-expanded="false" aria-label="Share this article" class="icon-wrapper">
             <img
               src="./images/icon-share.svg"
-              alt="share-icon"
+              alt="share-icon-button"
               class="share-icon"
             />
-          </div>
+          </button>
         </section>
         <!-- ------------------------ -->
       </section>

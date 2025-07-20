@@ -4,17 +4,16 @@ const authorSection = document.querySelector(".author-section ");
 const tooltip = document.querySelector(".tooltip");
 
 for (let btn of shareBtns) {
+  
   btn.addEventListener("click", () => {
-    // Mobile devices
-    socialLinks.classList.toggle("hide");
-    authorSection.classList.toggle("hide");
-
-    // Desktop Devices
-    if (window.innerWidth >= 640) {
-      socialLinks.classList.add("hide");
-      authorSection.classList.remove("hide");
-
-      tooltip.classList.toggle("hide");
+    const isDesktop = window.innerWidth >= 640;
+    if(isDesktop){
+      tooltip.classList.toggle("visually-hidden");
+    }else {
+      socialLinks.classList.toggle("visually-hidden");
+      authorSection.classList.toggle("visually-hidden");
     }
+  //  best practice for screen readers
+    btn.setAttribute("aria-expanded",btn.getAttribute("aria-expanded") === "true" ? "false" : "true");
   });
 }

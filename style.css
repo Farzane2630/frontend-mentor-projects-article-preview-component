@@ -30,7 +30,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease; }
 
 .share {
   font-weight: 500;
@@ -60,7 +62,7 @@ body {
   padding: 1rem;
   font-weight: 500; }
   .article .header {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #48556a; }
   .article .content {
     color: #9eafc2; }
@@ -68,13 +70,13 @@ body {
 .tooltip {
   position: absolute;
   background-color: #6d7f97;
-  right: -2rem;
+  right: -3rem;
   bottom: 5rem;
   display: flex;
   column-gap: 0.75rem;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  transition: linear .2ms; }
+  transition: opacity 200ms linear; }
   .tooltip .social-icons {
     column-gap: 0.5rem; }
 
@@ -111,10 +113,9 @@ body {
   .share-section .icon-wrapper {
     background-color: #48556a; }
 
-.author-section .tooltip.hide,
-.author-section,
-.author-section.hide,
-.share-section.hide {
+.author-section .tooltip.visually-hidden,
+.author-section.visually-hidden,
+.share-section.visually-hidden {
   display: none; }
 
 @media (prefers-reduced-motion: reduce) {

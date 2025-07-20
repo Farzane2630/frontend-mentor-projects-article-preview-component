@@ -46,6 +46,8 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .share {
@@ -85,7 +87,7 @@ body {
     font-weight: 500;
 
     .header {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: $Very_Dark_Grayish_Blue;
     }
 
@@ -98,7 +100,7 @@ body {
 .tooltip {
     position: absolute;
     background-color: $Desaturated_Dark_Blue;
-    right: -2rem;
+    right: -3rem;
     bottom: 5rem;
 
     display: flex;
@@ -110,7 +112,7 @@ body {
         column-gap: 0.5rem;
     }
 
-    transition: linear .2ms;
+    transition: opacity 200ms linear;
 }
 
 
@@ -166,10 +168,9 @@ body {
 
 
 // Hide Display
-.author-section .tooltip.hide,
-.author-section,
-.author-section.hide,
-.share-section.hide {
+.author-section .tooltip.visually-hidden,
+.author-section.visually-hidden,
+.share-section.visually-hidden {
     display: none;
 }
 

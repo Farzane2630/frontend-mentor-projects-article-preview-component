@@ -2,7 +2,6 @@ const shareBtns = document.querySelectorAll(".icon-wrapper");
 const socialLinks = document.querySelector(".share-section");
 const authorSection = document.querySelector(".author-section ");
 const tooltip = document.querySelector(".tooltip");
-const tooltipTale = document.querySelector(".tooltip-tale");
 
 for (let btn of shareBtns) {
   btn.addEventListener("click", () => {
@@ -16,7 +15,6 @@ for (let btn of shareBtns) {
       authorSection.classList.remove("hide");
 
       tooltip.classList.toggle("hide");
-      tooltipTale.classList.toggle("hide");
     }
   });
 }

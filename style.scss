@@ -115,21 +115,6 @@ body {
     transition: opacity 200ms linear;
 }
 
-
-// Triangle under the share box!
-.tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-top: 10px solid $Desaturated_Dark_Blue;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-}
-
 .author-section {
     position: relative;
 
@@ -192,6 +177,38 @@ body {
         height: 100%;
         border-radius: 1rem 0 0 1rem;
     }
+
+    .share-section {
+        position: absolute;
+        right: 1rem;
+        bottom: 6rem;
+        display: flex;
+        column-gap: 0.75rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        .icon-wrapper{
+            display: none;
+        }
+
+        .social-icons {
+            column-gap: 0.5rem;
+        }
+
+        transition: opacity 200ms linear;
+    }
+
+    .share-section::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid $Desaturated_Dark_Blue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
 
 
 }

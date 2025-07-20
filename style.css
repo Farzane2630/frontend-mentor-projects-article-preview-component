@@ -80,18 +80,6 @@ body {
   .tooltip .social-icons {
     column-gap: 0.5rem; }
 
-.tooltip::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid #6d7f97;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent; }
-
 .author-section {
   position: relative; }
   .author-section .avatar {
@@ -127,6 +115,32 @@ body {
 
   .article-img {
     height: 100%;
-    border-radius: 1rem 0 0 1rem; } }
+    border-radius: 1rem 0 0 1rem; }
+
+  .share-section {
+    position: absolute;
+    right: 1rem;
+    bottom: 6rem;
+    display: flex;
+    column-gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: opacity 200ms linear; }
+    .share-section .icon-wrapper {
+      display: none; }
+    .share-section .social-icons {
+      column-gap: 0.5rem; }
+
+  .share-section::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid #6d7f97;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent; } }
 
 /*# sourceMappingURL=style.css.map */
